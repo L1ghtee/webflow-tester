@@ -4,17 +4,17 @@
   "description": "Automated Webflow UI tester using Playwright and Express",
   "main": "index.js",
   "scripts": {
-  "start": "node index.js",
-  "postinstall": "if [ \"$VERCEL\" != \"1\" ]; then npx playwright install --with-deps; fi",
-  
-  "test": "node test/check-buttons.js"
-}
-,
+    "start": "node index.js",
+    "postinstall": "if [ \"$VERCEL\" != \"1\" ]; then npx playwright install --with-deps; fi",
+    "test": "playwright test"
+  },
   "keywords": ["playwright", "webflow", "automation", "testing"],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.53.0"
+  },
   "dependencies": {
-    "@playwright/test": "^1.53.0",
     "express": "^5.1.0"
   }
 }
