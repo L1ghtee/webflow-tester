@@ -4,10 +4,11 @@
   "description": "Automated Webflow UI tester using Playwright and Express",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test/check-buttons.js",
-    "postinstall": "npx playwright install --with-deps"
-  },
+  "start": "node index.js",
+  "install:playwright": "npx playwright install --with-deps",
+  "test": "node test/check-buttons.js"
+}
+,
   "keywords": ["playwright", "webflow", "automation", "testing"],
   "author": "",
   "license": "ISC",
